@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css?family=B612+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+/*@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap'); */
+/*@import url('https://fonts.googleapis.com/css?family=B612+Mono&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css?family=Lato&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap'); */
+/* New font */
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
 
 .container {
     display: none;
@@ -38,8 +40,8 @@
     width: 100%;
     height: 30px;
     background-color: #881a1a;
-    border-bottom: 2px solid #fff;
-    font-family: 'Lato' monospace;
+    border-bottom: 2px dotted #fff;
+    font-family: 'Teko', sans-serif;
     box-shadow: inset 0px 0px 150px 0px rgba(255, 255, 255, 0.1);
 }
 
@@ -62,7 +64,7 @@
     color: rgba(0, 0, 0, 1.0);
     background: rgb(214, 50, 50);
     border-radius: 50%;
-    font-size: 18px;
+    font-size: 29px;
 }
 
 #close-log {
@@ -81,7 +83,7 @@
     color: rgba(0, 0, 0, 1.0);
     background: rgb(214, 50, 50);
     border-radius: 50%;
-    font-size: 18px;
+    font-size: 29px;
 }
 
 .disconnect-server-btn:hover {
@@ -91,7 +93,8 @@
 
 .disconnect-server-btn > p {
     color: rgb(255, 255, 255);
-    font-size: 13px;
+    /* Changed from 13 */
+    font-size: 29px;
     padding-top: 5%;
     padding-left: 6px;
 }
@@ -99,8 +102,8 @@
 .characters-block-header > p {
     text-align: center;
     color: white;
-    line-height: 24px;
-    font-family: 'Lato', monospace;
+    /* line-height: 24px; */
+   font-family: 'Teko', sans-serif;
 }
 
 .characters-list {
@@ -121,75 +124,89 @@
     width: 100%;
     height: 8%;
     right: 0;
+    font-size: 29px;
 }
 
 .character-list-header > p {
     text-align: center;
-    line-height: 37px;
-    font-family: 'Lato', monospace;
-    letter-spacing: 2px;
-    font-weight: bold;
+    /* line-height: 30px; */
+   font-family: 'Teko', sans-serif;
     color: white;
+    font-size: 29px;
 }
 
 .character {
     position: relative;
     width: 100%;
-    height: 75px;
-    margin-top: 15px;
-    background-color: rgba(0, 0, 0, 0.75);
-    font-family: 'Lato' monospace;
-    border-bottom: 4px solid #74aa3200;
-    transition: .1s linear;
-    border-radius: .2vh;
+    height: 30px;
+    /* Color for the character creation */
+    background-color: #222 ;
+    font-family: 'Teko', sans-serif;
+    font-size: 29px;
+    padding: 6px;
+    border-radius: 4px;
+    margin-top: 10px;
 }
 
 .character > span {
     color: rgb(255, 255, 255);
-    font-family: 'Lato' monospace !important;
+    font-family: 'Teko', sans-serif;
+    
 }
 
 #cid {
     position: relative;
     float: right;
-    font-size: 11px;
+    font-family: 'Teko', sans-serif;
+    color: teal;
+    font-size: 29px;
+    text-shadow: 0px 0px 10px 1px white;
     right: 35px;
-    line-height: 80px;
+    line-height: 35px;
+    height: 50px;
+    
 }
 
 .char-selected {
-    background-color: #9c88ffde;
+    background-color: #888;
+    border: 1px solid #444;
+    color: black;
 }
 
 .disabled {
     background-color: rgba(0, 0, 0, 0.691);
+    border: 10px solid magenta;
 }
 
 #slot-name {
     position: relative;
     color: rgb(255, 255, 255);
-    font-size: 17px;
-    line-height: 80px;
+    /* Changed from 17 */
+    font-size: 29px;
+    line-height: 35px;
+    height: 50px;
     left: 20px;
-    font-family: 'Lato' monospace;
+    font-family: 'Teko', sans-serif;
 }
 
 .character-btn {
     position: relative;
     width: 30%;
-    height: 50px;
+    height: 30px;
     top: 65%;
     transition: 0.2s;
     float: left;
     margin-top: 10px;
     margin-right: 10px;
+    
 }
 
 .character-btn > p {
     color: white;
     text-align: center;
     text-transform: uppercase;
-    line-height: 50px;
+    line-height: 32px;
+    
 }
 
 #play {
@@ -219,12 +236,17 @@
 .character-info {
     display: none;
     position: absolute;
-    width: 20%;
+    width: 25%;
+    min-width: 300px;
     height: 60%;
     right: 14%;
     top: -40%;
     background-color: rgba(0, 0, 0, 0.5);
     overflow: visible !important;
+    border: 1px solid #666;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #666;
 }
 
 #char-info-icon {
@@ -237,7 +259,9 @@
 
 #char-info-titel {
     position: absolute;
-    font-size: 17px;
+    /* Changed from 17 */
+    font-family: 'Teko', sans-serif;
+    font-size: 29px;
     color: white;
     top: 7px;
     left: 14px;
@@ -247,16 +271,20 @@
 #no-char {
     position: absolute;
     color: rgb(255, 255, 255);
-    font-size: 16px;
     top: 30%;
-    text-align: center;
+    text-align: left;
+    font-family: 'Teko', sans-serif;
+    font-size: 29px;
 }
 
 .char-info-titel {
+    font-family: 'Teko', sans-serif;
+    font-size: 29px;
     position: relative;
     left: 28%;
-    top: 3%;
+    top: 10px;
     overflow: visible !important;
+    color: teal;
 }
 
 .character-info-valid {
@@ -268,20 +296,27 @@
 .character-info-box {
     position: relative;
     color: white;
-    font-size: 12px;
+    /* Changed from 12 */
+    font-family: 'Teko', sans-serif;
+    font-size: 29px;
     width: 100%;
-    height: 20px;
-    border-bottom: 1px solid #fff;
+    height: 24px;
+    border-bottom: 1px solid rgb(139, 139, 139);
     margin-bottom: 12px;
+    padding-bottom: 2px;
 }
 
 .char-info-js {
     position: absolute;
     left: 50%;
+    font-family: 'Teko', sans-serif;
+    font-size: 29px;
 }
 
 #info-label {
     margin-left: 10px;
+    font-family: 'Teko', sans-serif;
+    font-size: 29px;
 }
 
 .character-delete {
@@ -299,7 +334,7 @@
     box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.54);
     text-align: center;
     color: white;
-    font-family: 'Lato', monospace;
+   font-family: 'Teko', sans-serif;
     overflow: visible !important;
 }
 
@@ -312,13 +347,13 @@
     text-align: center;
     font-size: 11px;
     line-height: 29px;
-    font-family: 'Lato', monospace;
+   font-family: 'Teko', sans-serif;
     border-bottom: 2px solid #b12424;
     overflow: visible !important;
 }
 
 .characters-delete-block-header > p {
-    font-family: 'Lato', monospace;
+   font-family: 'Teko', sans-serif;
     overflow: visible !important;
 }
 
@@ -329,7 +364,8 @@
 }
 
 #yeet {
-    font-size: 12px;
+    /* Changed from 12 */
+    font-size: 29px;
     overflow: visible !important;
 }
 
@@ -373,7 +409,7 @@
     color: white;
     text-align: center;
     padding-top: 7px;
-    font-family: 'Lato', monospace;
+   font-family: 'Teko', sans-serif;
     overflow: visible !important;
 }
 
@@ -381,7 +417,7 @@
     color: white;
     text-align: center;
     padding-top: 7px;
-    font-family: 'Lato', monospace;
+   font-family: 'Teko', sans-serif;
     overflow: visible !important;
 }
 
@@ -396,7 +432,7 @@
     left: 32px;
     background-color: rgba(0, 0, 0, 0.7);
     box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.54);
-    font-family: 'Lato', monospace;
+   font-family: 'Teko', sans-serif;
     border-bottom: 4px solid #b12424;
 }
 
@@ -407,9 +443,10 @@
     height: 11%;
     color: rgb(255, 255, 255);
     text-align: center;
-    font-size: 11px;
+    /* Changed from 11 */
+    font-size: 29px;
     line-height: 29px;
-    font-family: 'Lato', monospace;
+   font-family: 'Teko', sans-serif;
     border-bottom: 2px solid #b12424;
 }
 
@@ -436,7 +473,7 @@
     border-radius: 2px 2px 4px 4px;
     box-shadow: inset 0px 0px 10px 0px rgba(255, 255, 255, 0.1);
     border: 1px solid #b12424bb;
-    font-family: 'Lato', monospace;
+   font-family: 'Teko', sans-serif;
     text-align: center;
     transition: all 0.2s ease-in-out;
 }
@@ -465,7 +502,7 @@ select {
     border-radius: 2px 2px 4px 4px;
     box-shadow: inset 0px 0px 10px 0px rgba(255, 255, 255, 0.1);
     border: 1px solid #b12424bb;
-    font-family: 'Lato', monospace;
+   font-family: 'Teko', sans-serif;
     text-align-last: center;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -503,7 +540,7 @@ select::-ms-expand {
 
 input[type="date"] {
     color: white;
-    font-family: 'Lato', monospace;
+   font-family: 'Teko', sans-serif;
     text-align: center;
 }
 
@@ -528,7 +565,7 @@ input[type="date"]::-webkit-clear-button {
 #birthdate {
     color: white;
     text-align: center;
-    font-family: 'Lato', monospace;
+   font-family: 'Teko', sans-serif;
 }
 
 .character-reg-btn {
@@ -536,7 +573,8 @@ input[type="date"]::-webkit-clear-button {
     width: auto;
     max-width: 50%;
     height: 36px;
-    background-color: #ca382c;
+    /* Changed from #ca382c; */
+    background-color: limegreen;
     border-radius: 4px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.342);
     bottom: 5%;
@@ -549,8 +587,9 @@ input[type="date"]::-webkit-clear-button {
     text-align: center;
     line-height: 34px;
     color: white;
-    font-family: 'B612 Mono', monospace;
-    font-size: 13px;
+    font-family: 'Teko', sans-serif;
+    /* Changed from 13 */
+    font-size: 29px;
 }
 
 .bars div{
@@ -570,9 +609,10 @@ input[type="date"]::-webkit-clear-button {
     height: 5%;
     text-align: center;
     line-height: 5vh;
-    font-family: 'Lato', monospace;
+   font-family: 'Teko', sans-serif;
     font-weight: bolder;
-    font-size: 1.75vh;
+    /* Changed from 1.75vh */
+    font-size: 29px;
     color: white;
     /* border-bottom: 3px solid #b12424; */
 }
@@ -596,7 +636,7 @@ input[type="date"]::-webkit-clear-button {
     margin-right: auto;
     background-color: rgba(0, 0, 0, 0.7);
     box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.54);
-    font-family: 'Lato', monospace;
+   font-family: 'Teko', sans-serif;
     border-bottom: 4px solid #b12424;
     border-radius: 0px 0px 10px 10px;
 }
@@ -608,9 +648,10 @@ input[type="date"]::-webkit-clear-button {
     height: 10%;
     color: rgb(255, 255, 255);
     text-align: center;
-    font-size: 11px;
+    /* Changed from 11 */
+    font-size: 29px;
     line-height: 30px;
-    font-family: 'Lato', monospace;
+   font-family: 'Teko', sans-serif;
     border-bottom: 2px solid #b12424;
 }
 
@@ -618,25 +659,27 @@ input[type="date"]::-webkit-clear-button {
     position: relative;
     top: 30px;
     color: rgb(255, 255, 255);
-    font-family: 'Lato', monospace;
+   font-family: 'Teko', sans-serif;
     margin-top: 20px;
 }
 
 #log-date {
     color: #ff4646;
-    font-size: 12px;
+    /* Changed from 12 */
+    font-size: 29px;
     padding-left: 10px;
     text-shadow: 0px 0px 4px rgba(0,0,0,0.35);
-    font-family: 'Lato', monospace;
+   font-family: 'Teko', sans-serif;
 }
 
 #log-changes {
     position: relative;
     top: 10px;
     left: 30px;
-    font-size: 10px;
     text-shadow: 0px 0px 4px rgba(0,0,0,0.35);
-    font-family: 'Lato', monospace;
+        /* Changed from 10 */
+   font-size: 29px;
+   font-family: 'Teko', sans-serif;
 }
 
 .welcomescreen {
@@ -645,25 +688,26 @@ input[type="date"]::-webkit-clear-button {
     margin: 0 auto;
     left: 0;
     right: 0;
-    top: 1%;
-    height: 28%;
-    width: 30%;
+    top: 100px;
 	overflow: visible !important;
+    font-size: 49px;
+    font-family: 'Teko', sans-serif;
 }
 
 .welcomescreen > p {
     position: relative;
-    color: #ffffff;
+    
     text-align: center;
 	overflow: visible !important;
+    border: 1px solid red;
 }
 
 #welcome-titel {
     position: relative;
     top: 45px;
     left: 20px;
-    font-size: 30px;
-    font-family: 'Lato', monospace;
+    font-size: 29px;
+   font-family: 'Teko', sans-serif;
     font-weight: bolder;
 }
 
@@ -695,7 +739,7 @@ input[type="date"]::-webkit-clear-button {
     line-height: 3.6vh;
     color: white;
     text-transform: uppercase;
-    font-family: 'Source Sans Pro', monospace;
+    font-family: 'Teko', sans-serif;
 }
 
 .disconnect-btn {
@@ -719,7 +763,7 @@ input[type="date"]::-webkit-clear-button {
     line-height: 3.6vh;
     color: white;
     text-transform: uppercase;
-    font-family: 'Source Sans Pro', monospace;
+    font-family: 'Teko', sans-serif;
 }
 
 ::-webkit-scrollbar-track
@@ -754,7 +798,7 @@ input[type="date"]::-webkit-clear-button {
 .loading-rondje > p {
     color: white;
     margin-top: 1vh;
-    font-family: 'Lato';
+    font-family: 'Teko', sans-serif;
     text-shadow: 1px 1px 0px #00000085;
 }
 

@@ -90,7 +90,7 @@ $('.disconnect-btn').click(function(e){
 
 function setupCharInfo(cData) {
     if (cData == 'empty') {
-        $('.character-info-valid').html('<span id="no-char">The selected character slot is not in use yet.<br><br>This character doesn\'t have information yet.</span>');
+        $('.character-info-valid').html('<span id="no-char">Empty<br><br>Empty</span>');
     } else {
         var gender = "Man"
         if (cData.charinfo.gender == 1) { gender = "Woman" }
